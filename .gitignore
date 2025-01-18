@@ -2,3 +2,4 @@ server.key
 server.key.pub
 /venv
 .env
+__pycache__
