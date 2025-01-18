@@ -1,6 +1,7 @@
 # Libraries
 import argparse
 from honeypot import *
+from web_honeypot import *
 
 
 # Parse arguments
@@ -30,7 +31,16 @@ if __name__ == "__main__":
         password = None
     elif args.web_server:
       print("[-] Running Web Server honeypot")
-      honeypot(args.address, args.port, args.username, args.password, "web_server")
+      
+      if not args.username:
+        args.username = "admin"
+      if not args.password:
+        args.password = "password"
+      
+      print(f'Port: {args.port} - Username: {args.username} - Password: {args.password}')
+      
+      # honeypot(args.address, args.port, args.username, args.password, "web_server")
+      run_web_honeypot(args.port, args.username, args.password)
       
       pass
     else:

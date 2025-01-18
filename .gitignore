@@ -1,5 +1,5 @@
-server.key
-server.key.pub
+/static/server.key
+/static/server.key.pub
 /venv
 .env
 __pycache__

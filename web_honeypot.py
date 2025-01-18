@@ -11,7 +11,7 @@ logging_format = logging.Formatter('%(asctime)s - %(message)s')
 # HTTP logger
 http_logger = logging.getLogger('HTTP Logger')
 http_logger.setLevel(logging.INFO)
-http_handler = RotatingFileHandler('http_audits.log', maxBytes=2000, backupCount=5)
+http_handler = RotatingFileHandler('/logs/http_audits.log', maxBytes=2000, backupCount=5)
 http_handler.setFormatter(logging_format)
 http_logger.addHandler(http_handler)
 
@@ -48,4 +48,3 @@ def run_web_honeypot(port=500, input_username="admin", input_password="password"
   
     return run_web_honeypot_app
 
-run_web_honeypot(port=5000, input_username="admin", input_password="password")
