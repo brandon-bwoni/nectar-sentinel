@@ -1,9 +1,10 @@
+![nectar](https://github.com/user-attachments/assets/7026f354-a37e-4a11-9a06-65e22b176281)
 # Nectar Sentinel Honeypot
 
 ## 1. Project Overview
 
 ### Title
-Python-based Honeypot Application
+Nectar Sentinel Honeypot Application
 
 ### Description
 This Python-based honeypot application is designed to emulate a vulnerable system to attract and monitor potential attackers. It features an SSH server and a web server, both configured to capture suspicious activities. By simulating weak security, the app gathers valuable insights into malicious behavior and attack patterns, enhancing understanding of cybersecurity threats.
